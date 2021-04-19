@@ -1,0 +1,10 @@
+:root {
+  --title-font:'Staatliches', cursive;
+  --main-color:#f7a222;  
+  --sub-color:#ee5a24;
+  --chat-color:#ffdd59;
+  --gradient:linear-gradient(#f7a222, #fda7df);
+  --grey:rgba(0,0,0,0.6);
+  --basic-color:#26232e;
+  --title-font: 'Sriracha', cursive;
+}

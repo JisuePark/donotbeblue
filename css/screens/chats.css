@@ -1,0 +1,25 @@
+.group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-component__img__group {
+  width: 20px;
+  height: 20px;
+}
+
+.user-component__group {
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
+  background-color: rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content:space-between;
+  padding: 8px;
+}
+
+/* .user-component__group img:first-child {
+  margin-right: 4px;
+} */

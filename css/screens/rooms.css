@@ -1,0 +1,154 @@
+.rooms {
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.room-column {
+  display: block;
+  width: 180px;
+  height: 180px;
+ position: relative;
+}
+
+.room-column::after {
+  display: block;
+  content: "";
+  width: 180px;
+  height: 180px;
+  border-radius: 20%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.room-column:first-child,
+.room-column:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.room-column img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+.room-content__subject {
+  font-size: 28px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 700;
+  color: #fff;
+  z-index:97;
+}
+
+.room-content__title {
+  width: 100%;
+ position:absolute;
+ bottom: 54px;
+ left: 20px;
+ font-size: 14px;
+ font-weight: 700;
+ color: #fff;
+ opacity: 0;
+ z-index:97;
+}
+
+.room-column:hover::after {
+  opacity: 0.4;
+}
+
+.room-column:hover .room-content__title{
+  opacity: 1;
+}
+
+.open-chat__section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.open-chat__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.open-chat__hashtag {
+  font-size: 14px;
+  color: var(--grey);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.open-chat__members {
+  display: flex;
+  align-items: baseline;
+}
+
+.open-chat__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.open-chat__member-count {
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.open-chat__member-status {
+  display: block;
+  font-weight: 700;
+  color: var(--sub-color);
+  border-left: 1px solid var(--sub-color);
+  padding-left: 4px;
+}
+
+.open-chat__column {
+  position:relative;
+}
+
+.open-chat__photo img {
+  width: 150px;
+  border-radius: 15px ;
+}
+
+.open-chat__heart-count {
+  font-size: 12px;
+  color: #fff;  
+  padding: 8px 8px;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.3);
+  position:absolute;
+  top: 6px;
+  right: 8px;
+}
+
+@keyframes heart-beating {
+  from {
+    color: #fff;
+    transform: scale(1);
+  } to {
+    color: var(--sub-color);
+    transform: scale(1.2);
+  }
+}
+
+.open-chat__heart-count:hover i {
+  animation: heart-beating 0.5s ease-in-out alternate infinite;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don't be blue - Log In</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome -->
+  <script defer src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>Be with YOU</span>
+      <span><i class="far fa-smile-wink"></i></span>
+    </div>
+    <div class="status-bar__column">
+      <span class="js-clock">00:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span><i class="fas fa-battery-full"></i></span>
+    </div>
+  </div>
+
+  <main class="main-screen login-screen">
+    <div class="greeting">
+      <h1 class="greeting__title">
+        don't <br> be blue
+      </h1>
+      <p class="greeting_script">
+        When you need friend <br>
+        I am here for <span>YOU</span>
+      </p>
+    </div>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input type="text" placeholder="Email or Mobile number" required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ [0-9]{3}+[0-9]{4}+[0-9]{4}">
+      <input type="password" placeholder=Password required>
+      <input type="submit" value="Log in">
+    </form>
+    <a href="#" class="sign-up"><button>Sign up</button></a>
+    <a href="#" class="find-account">Find &nbsp;<span>DON'T BE BLUE</span>&nbsp; Account or Password</a>
+
+  </main>
+
+  <div id="screen-splash">
+    <h1> don't <br> be blue</h1>
+  </div>
+
+  <div id="no-mobile">
+    <span>Your screen is too big</span>
+  </div>
+
+</body>
+
+</html>
